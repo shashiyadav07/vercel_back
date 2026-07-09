@@ -25,7 +25,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: "https://vercel-front-opal-seven.vercel.app",
+  origin: "https://vercel-front-git-main-shashiyadav07s-projects.vercel.app/",
   credentials: true
 }));
 
@@ -135,7 +135,7 @@ app.post('/', async (req, res) => {
 const server = http.createServer(app)
 const io = new Server(server,{
   cors:{
-    origin:"https://vercel-front-opal-seven.vercel.app",
+    origin:"https://vercel-front-git-main-shashiyadav07s-projects.vercel.app/",
     methods:["GET","POST"],
     credentials:true
   }

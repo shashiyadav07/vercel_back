@@ -25,7 +25,8 @@ const app = express();
 
 
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: "https://vercel-front-opal-seven.vercel.app",
+  credentials: true
 }));
 
 app.use(express.json());
@@ -132,9 +133,11 @@ app.post('/', async (req, res) => {
 // })
 
 const server = http.createServer(app)
-const io = new Server(server, {
-  cors: {
-    origin: 'http://localhost:5173'
+const io = new Server(server,{
+  cors:{
+    origin:"https://vercel-front-opal-seven.vercel.app",
+    methods:["GET","POST"],
+    credentials:true
   }
 })
 

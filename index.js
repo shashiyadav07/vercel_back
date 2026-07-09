@@ -9,7 +9,7 @@ import dotenv from "dotenv";
 dotenv.config();
 // import upload from './config/multer.js';
 import {v2 as cloudinary} from 'cloudinary'
-import { Socket } from 'dgram';
+// import { Socket } from 'dgram';
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
